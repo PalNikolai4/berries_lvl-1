@@ -1,0 +1,48 @@
+{
+  "name": "berries_lvl-1",
+  "private": true,
+  "description": "Самостоятельный проект от HTML Academy",
+  "scripts": {
+    "dev": "vite --port 8080",
+    "build": "vite build",
+    "preview": "vite preview --port 8080",
+    "lint:styles": "stylelint \"src/sass/**/*.scss\"",
+    "lint:styles:fix": "stylelint \"src/sass/**/*.scss\" --fix",
+    "lint:js": "eslint \"src/js/**/*.js\"",
+    "lint:js:fix": "eslint \"src/js/**/*.js\" --fix",
+    "lint": "npm run lint:styles && npm run lint:js",
+    "lint:fix": "npm run lint:styles:fix && npm run lint:js:fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PalNikolai4/berries_lvl-1.git"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "type": "module",
+  "engines": {
+    "node": "^24"
+  },
+  "bugs": {
+    "url": "https://github.com/PalNikolai4/berries_lvl-1/issues"
+  },
+  "homepage": "https://github.com/PalNikolai4/berries_lvl-1#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "autoprefixer": "^10.5.4",
+    "eslint": "^10.8.0",
+    "globals": "^17.9.0",
+    "postcss": "^8.5.25",
+    "sass": "^1.102.0",
+    "stylelint": "^17.14.1",
+    "stylelint-config-standard-scss": "^17.0.0",
+    "vite": "^8.2.0"
+  },
+  "browserslist": [
+    "last 2 version",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini_all",
+    "not < 0.25%"
+  ]
+}
