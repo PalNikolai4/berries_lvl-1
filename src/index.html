@@ -6,7 +6,38 @@
     <title>Магазин ягод Berries</title>
 </head>
 <body class="page__body">
-    <h1>hello word</h1>
+    <header class="page__header">
+      <a class="logo" aria-label="На главную">
+        <span class="visually-hidden">Логотип магазина ягод Berries</span>
+        <svg class="logo-img" width="52" height="52">
+          <use href="./assets/icons/logo.svg"></use>
+        </svg>
+        <svg class="logo-word" width="67" height="50">
+          <use href="./assets/icons/logo-word.svg"></use>
+        </svg>
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__button" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Каталог</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Новости</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Контакты</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Заказать</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+
     <script type="module" src="js/main.js"></script>
 </body>
 </html>
