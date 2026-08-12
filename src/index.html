@@ -1,200 +1,247 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Магазин ягод Berries</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Магазин ягод Berries</title>
 </head>
+
 <body class="page__body">
-    <header class="page__header">
-      <a class="logo" aria-label="На главную">
-        <span class="visually-hidden">Логотип магазина ягод Berries</span>
-        <svg class="logo-img" width="52" height="52">
-          <use href="./assets/icons/logo.svg"></use>
-        </svg>
-        <svg class="logo-word" width="67" height="50">
-          <use href="./assets/icons/logo-word.svg"></use>
-        </svg>
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__button" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Каталог</a>
+  <header class="page__header">
+    <a class="logo" aria-label="На главную">
+      <span class="visually-hidden">Логотип магазина ягод Berries</span>
+      <svg class="logo-img" width="52" height="52">
+        <use href="./assets/icons/logo.svg"></use>
+      </svg>
+      <svg class="logo-word" width="67" height="50">
+        <use href="./assets/icons/logo-word.svg"></use>
+      </svg>
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__button" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Каталог</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Новости</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Контакты</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Заказать</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page__main">
+    <h1 class="visually-hidden">Магазин ягод Berries</h1>
+
+    <section class="promo">
+      <div class="promo__wrapper">
+        <h2 class="promo__title">Ягоды с доставкой</h2>
+        <p class="promo__legend promo__legend--product">Отборные ягоды</p>
+        <p class="promo__legend promo__legend--taste">Натуральный вкус сохранён методом шоковой заморозки</p>
+        <p class="promo__legend promo__legend--delivery">Доставка по Санкт-Петербургу</p>
+        <a class="button promo__button" href="form.html">Заказать</a>
+      </div>
+    </section>
+
+    <section class="catalog">
+      <div class="catalog__wrapper">
+        <h2 class="catalog__title">Каталог</h2>
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <article class="product-card">
+              <a class="product-card__link" href="#">
+                <picture>
+                  <source type="image/webp"
+                    srcset="./assets/images/malina@1x.webp 1x, ./assets/images/malina@2x.webp 2x">
+                  <source srcset="./assets/images/malina@2x.jpg 2x">
+                  <img class="product-card__img" src="./assets/images/malina@1x.jpg" width="264" height="180"
+                    alt="Несколько ягод замороженной малины">
+                </picture>
+                <h3 class="visually-hidden">Малина</h3>
+              </a>
+              <p class="product-card__info">
+                <data class="product-card__price" value="350">350 ₽</data>
+                <span class="product-card__weight">за 1 кг</span>
+              </p>
+              <a class="button product-card__button" href="form.html">Заказать</a>
+            </article>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Новости</a>
+          <li class="catalog__item">
+            <article class="product-card">
+              <a class="product-card__link" href="#">
+                <picture>
+                  <source type="image/webp"
+                    srcset="./assets/images/ezevika@2x.webp 1x, ./assets/images/ezevika@2x.webp 2x">
+                  <source srcset="./assets/images/ezevika@2x.jpg 2x">
+                  <img class="product-card__img" src="./assets/images/ezevika@2x.jpg" width="264" height="180"
+                    alt="Несколько ягод замороженной ежевики">
+                </picture>
+                <h3 class="visually-hidden">Ежевика</h3>
+              </a>
+              <p class="product-card__info">
+                <data class="product-card__price" value="550">550 ₽</data>
+                <span class="product-card__weight">за 1 кг</span>
+              </p>
+              <a class="button product-card__button" href="form.html">Заказать</a>
+            </article>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Контакты</a>
+          <li class="catalog__item">
+            <article class="product-card">
+              <a class="product-card__link" href="#">
+                <picture>
+                  <source type="image/webp"
+                    srcset="./assets/images/brusnika@2x.webp 1x, ./assets/images/brusnika@2x.webp 2x">
+                  <source srcset="./assets/images/brusnika@2x.jpg 2x">
+                  <img class="product-card__img" src="./assets/images/brusnika@2x.jpg" width="264" height="180"
+                    alt="Несколько ягод замороженной брусники">
+                </picture>
+                <h3 class="visually-hidden">Брусника</h3>
+              </a>
+              <p class="product-card__info">
+                <data class="product-card__price" value="390">390 ₽</data>
+                <span class="product-card__weight">за 1 кг</span>
+              </p>
+              <a class="button product-card__button" href="form.html">Заказать</a>
+            </article>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Заказать</a>
+          <li class="catalog__item">
+            <article class="product-card">
+              <a class="product-card__link" href="#">
+                <picture>
+                  <source type="image/webp"
+                    srcset="./assets/images/klubnika@2x.webp 1x, ./assets/images/klubnika@2x.webp 2x">
+                  <source srcset="./assets/images/klubnika@2x.jpg 2x">
+                  <img class="product-card__img" src="./assets/images/klubnika@2x.jpg" width="264" height="180"
+                    alt="Несколько ягод клубники">
+                </picture>
+                <h3 class="visually-hidden">Клубника</h3>
+              </a>
+              <p class="product-card__info">
+                <data class="product-card__price" value="450">450 ₽</data>
+                <span class="product-card__weight">за 1 кг</span>
+              </p>
+              <a class="button product-card__button" href="form.html">Заказать</a>
+            </article>
+          </li>
+          <li class="catalog__item">
+            <article class="product-card">
+              <a class="product-card__link" href="#">
+                <picture>
+                  <source type="image/webp"
+                    srcset="./assets/images/vishnya@2x.webp 1x, ./assets/images/vishnya@2x.webp 2x">
+                  <source srcset="./assets/images/vishnya@2x.jpg 2x">
+                  <img class="product-card__img" src="./assets/images/vishnya@2x.jpg" width="264" height="180"
+                    alt="Несколько ягод вишни">
+                </picture>
+                <h3 class="visually-hidden">Вишня</h3>
+              </a>
+              <p class="product-card__info">
+                <data class="product-card__price" value="375">375 ₽</data>
+                <span class="product-card__weight">за 1 кг</span>
+              </p>
+              <a class="button product-card__button" href="form.html">Заказать</a>
+            </article>
+          </li>
+          <li class="catalog__item">
+            <article class="product-card">
+              <a class="product-card__link" href="#">
+                <picture>
+                  <source type="image/webp"
+                    srcset="./assets/images/krizovnik@2x.webp 1x, ./assets/images/krizovnik@2x.webp 2x">
+                  <source srcset="./assets/images/krizovnik@2x.jpg 2x">
+                  <img class="product-card__img" src="./assets/images/krizovnik@2x.jpg" width="264" height="180"
+                    alt="Несколько ягод крыжовника">
+                </picture>
+                <h3 class="visually-hidden">Крыжовник</h3>
+              </a>
+              <p class="product-card__info">
+                <data class="product-card__price" value="300">300 ₽</data>
+                <span class="product-card__weight">за 1 кг</span>
+              </p>
+              <a class="button product-card__button" href="form.html">Заказать</a>
+            </article>
+          </li>
+          <li class="catalog__item">
+            <article class="product-card">
+              <a class="product-card__link" href="#">
+                <picture>
+                  <source type="image/webp"
+                    srcset="./assets/images/golubika@2x.webp 1x, ./assets/images/golubika@2x.webp 2x">
+                  <source srcset="./assets/images/golubika@2x.jpg 2x">
+                  <img class="product-card__img" src="./assets/images/golubika@2x.jpg" width="264" height="180"
+                    alt="Несколько ягод голубики">
+                </picture>
+                <h3 class="visually-hidden">Голубика</h3>
+              </a>
+              <p class="product-card__info">
+                <data class="product-card__price" value="510">510 ₽</data>
+                <span class="product-card__weight">за 1 кг</span>
+              </p>
+              <a class="button product-card__button" href="form.html">Заказать</a>
+            </article>
+          </li>
+          <li class="catalog__item">
+            <article class="product-card">
+              <a class="product-card__link" href="#">
+                <picture>
+                  <source type="image/webp"
+                    srcset="./assets/images/klukva@2x.webp 1x, ./assets/images/klukva@2x.webp 2x">
+                  <source srcset="./assets/images/klukva@2x.jpg 2x">
+                  <img class="product-card__img" src="./assets/images/klukva@2x.jpg" width="264" height="180"
+                    alt="Несколько ягод замороженной клюквы">
+                </picture>
+                <h3 class="visually-hidden">Клюква</h3>
+              </a>
+              <p class="product-card__info">
+                <data class="product-card__price" value="320">320 ₽</data>
+                <span class="product-card__weight">за 1 кг</span>
+              </p>
+              <a class="button product-card__button" href="form.html">Заказать</a>
+            </article>
           </li>
         </ul>
-      </nav>
-    </header>
-    <main class="page__main">
-      <h1 class="visually-hidden">Магазин ягод Berries</h1>
+      </div>
+    </section>
+    <section class="news">
+      <div class="news__wrapper">
+        <h2 class="visually-hidden">Новости и акции</h2>
+        <p class="news__title">Что новенького?</p>
+        <ul class="news__list">
+          <li class="news__item">
+            <article class="news-card">
+              <h3 class="news-card__title">Новый урожай клубники</h3>
+              <p class="news-card__description">К нам поступила свежая сочная ароматная клубника из Алтайского края. Крупные отборные ягоды можно приобрести свежими от 200 гр, или замороженными от 1 кг. Поторопитесь, сезон клубники короткий и свежие ягоды скоро закончатся.</p>
+              <time class="news-card__date" datetime="2022-06-22">22 июня 2022</time>
+            </article>
+          </li>
+          <li class="news__item">
+            <article class="news-card">
+              <h3 class="news-card__title">В июне дарим скидку 15% на все свежие ягоды</h3>
+              <p class="news-card__description">Свежие ягоды урожая этого года со скидкой 15%.  Клубнику, малину, голубику, вишню доставим от 200 гр.</p>
+              <time class="news-card__date" datetime="2022-06-15">15 июня 2022</time>
+            </article>
+          </li>
+          <li class="news__item">
+            <article class="news-card">
+              <h3 class="news-card__title">Микс из ягод</h3>
+              <p class="news-card__description">Мы приготовим для вас смеси из различных замороженных ягод по вашему пожеланию. Ягодные смеси удобно использовать для приготовления напитков. Все ягоды замораживаются методом шоковой заморозки, что позволяет сохранить их естественный вкус и аромат.</p>
+              <time class="news-card__date" datetime="2022-06-02">02 июня 2022</time>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
 
-      <section class="promo">
-        <div class="promo__wrapper">
-          <h2 class="promo__title">Ягоды с доставкой</h2>
-          <p class="promo__legend promo__legend--product">Отборные ягоды</p>
-          <p class="promo__legend promo__legend--taste">Натуральный вкус сохранён методом шоковой заморозки</p>
-          <p class="promo__legend promo__legend--delivery">Доставка по Санкт-Петербургу</p>
-          <a class="button promo__button" href="form.html">Заказать</a>
-        </div>
-      </section>
-
-      <section class="catalog">
-        <div class="catalog__wrapper">
-          <h2 class="catalog__title">Каталог</h2>
-          <ul class="catalog__list">
-            <li class="catalog__item">
-              <article class="product-card">
-                <a class="product-card__link" href="#">
-                  <picture>
-                    <source type="image/webp" srcset="./assets/images/malina@1x.webp 1x, ./assets/images/malina@2x.webp 2x">
-                    <source srcset="./assets/images/malina@2x.jpg 2x">
-                    <img class="product-card__img" src="./assets/images/malina@1x.jpg" width="264" height="180" alt="Несколько ягод замороженной малины">
-                  </picture>
-                  <h3 class="visually-hidden">Малина</h3>
-                </a>
-                <p class="product-card__info">
-                  <data class="product-card__price" value="350">350 ₽</data>
-                  <span class="product-card__weight">за 1 кг</span>
-                </p>
-                <a class="button product-card__button" href="form.html">Заказать</a>
-              </article>
-            </li>
-            <li class="catalog__item">
-              <article class="product-card">
-                <a class="product-card__link" href="#">
-                  <picture>
-                    <source type="image/webp" srcset="./assets/images/ezevika@2x.webp 1x, ./assets/images/ezevika@2x.webp 2x">
-                    <source srcset="./assets/images/ezevika@2x.jpg 2x">
-                    <img class="product-card__img" src="./assets/images/ezevika@2x.jpg" width="264" height="180" alt="Несколько ягод замороженной ежевики">
-                  </picture>
-                  <h3 class="visually-hidden">Ежевика</h3>
-                </a>
-                <p class="product-card__info">
-                  <data class="product-card__price" value="550">550 ₽</data>
-                  <span class="product-card__weight">за 1 кг</span>
-                </p>
-                <a class="button product-card__button" href="form.html">Заказать</a>
-              </article>
-            </li>
-            <li class="catalog__item">
-              <article class="product-card">
-                <a class="product-card__link" href="#">
-                  <picture>
-                    <source type="image/webp" srcset="./assets/images/brusnika@2x.webp 1x, ./assets/images/brusnika@2x.webp 2x">
-                    <source srcset="./assets/images/brusnika@2x.jpg 2x">
-                    <img class="product-card__img" src="./assets/images/brusnika@2x.jpg" width="264" height="180" alt="Несколько ягод замороженной брусники">
-                  </picture>
-                  <h3 class="visually-hidden">Брусника</h3>
-                </a>
-                <p class="product-card__info">
-                  <data class="product-card__price" value="390">390 ₽</data>
-                  <span class="product-card__weight">за 1 кг</span>
-                </p>
-                <a class="button product-card__button" href="form.html">Заказать</a>
-              </article>
-            </li>
-            <li class="catalog__item">
-              <article class="product-card">
-                <a class="product-card__link" href="#">
-                  <picture>
-                    <source type="image/webp" srcset="./assets/images/klubnika@2x.webp 1x, ./assets/images/klubnika@2x.webp 2x">
-                    <source srcset="./assets/images/klubnika@2x.jpg 2x">
-                    <img class="product-card__img" src="./assets/images/klubnika@2x.jpg" width="264" height="180" alt="Несколько ягод клубники">
-                  </picture>
-                  <h3 class="visually-hidden">Клубника</h3>
-                </a>
-                <p class="product-card__info">
-                  <data class="product-card__price" value="450">450 ₽</data>
-                  <span class="product-card__weight">за 1 кг</span>
-                </p>
-                <a class="button product-card__button" href="form.html">Заказать</a>
-              </article>
-            </li>
-            <li class="catalog__item">
-              <article class="product-card">
-                <a class="product-card__link" href="#">
-                  <picture>
-                    <source type="image/webp" srcset="./assets/images/vishnya@2x.webp 1x, ./assets/images/vishnya@2x.webp 2x">
-                    <source srcset="./assets/images/vishnya@2x.jpg 2x">
-                    <img class="product-card__img" src="./assets/images/vishnya@2x.jpg" width="264" height="180" alt="Несколько ягод вишни">
-                  </picture>
-                  <h3 class="visually-hidden">Вишня</h3>
-                </a>
-                <p class="product-card__info">
-                  <data class="product-card__price" value="375">375 ₽</data>
-                  <span class="product-card__weight">за 1 кг</span>
-                </p>
-                <a class="button product-card__button" href="form.html">Заказать</a>
-              </article>
-            </li>
-            <li class="catalog__item">
-              <article class="product-card">
-                <a class="product-card__link" href="#">
-                  <picture>
-                    <source type="image/webp" srcset="./assets/images/krizovnik@2x.webp 1x, ./assets/images/krizovnik@2x.webp 2x">
-                    <source srcset="./assets/images/krizovnik@2x.jpg 2x">
-                    <img class="product-card__img" src="./assets/images/krizovnik@2x.jpg" width="264" height="180" alt="Несколько ягод крыжовника">
-                  </picture>
-                  <h3 class="visually-hidden">Крыжовник</h3>
-                </a>
-                <p class="product-card__info">
-                  <data class="product-card__price" value="300">300 ₽</data>
-                  <span class="product-card__weight">за 1 кг</span>
-                </p>
-                <a class="button product-card__button" href="form.html">Заказать</a>
-              </article>
-            </li>
-            <li class="catalog__item">
-              <article class="product-card">
-                <a class="product-card__link" href="#">
-                  <picture>
-                    <source type="image/webp" srcset="./assets/images/golubika@2x.webp 1x, ./assets/images/golubika@2x.webp 2x">
-                    <source srcset="./assets/images/golubika@2x.jpg 2x">
-                    <img class="product-card__img" src="./assets/images/golubika@2x.jpg" width="264" height="180" alt="Несколько ягод голубики">
-                  </picture>
-                  <h3 class="visually-hidden">Голубика</h3>
-                </a>
-                <p class="product-card__info">
-                  <data class="product-card__price" value="510">510 ₽</data>
-                  <span class="product-card__weight">за 1 кг</span>
-                </p>
-                <a class="button product-card__button" href="form.html">Заказать</a>
-              </article>
-            </li>
-            <li class="catalog__item">
-              <article class="product-card">
-                <a class="product-card__link" href="#">
-                  <picture>
-                    <source type="image/webp" srcset="./assets/images/klukva@2x.webp 1x, ./assets/images/klukva@2x.webp 2x">
-                    <source srcset="./assets/images/klukva@2x.jpg 2x">
-                    <img class="product-card__img" src="./assets/images/klukva@2x.jpg" width="264" height="180" alt="Несколько ягод замороженной клюквы">
-                  </picture>
-                  <h3 class="visually-hidden">Клюква</h3>
-                </a>
-                <p class="product-card__info">
-                  <data class="product-card__price" value="320">320 ₽</data>
-                  <span class="product-card__weight">за 1 кг</span>
-                </p>
-                <a class="button product-card__button" href="form.html">Заказать</a>
-              </article>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-    </main>
-
-    <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/main.js"></script>
 </body>
+
 </html>
