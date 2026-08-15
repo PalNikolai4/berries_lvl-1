@@ -1,0 +1,40 @@
+@use "../../abstracts/index.scss" as abs;
+
+.page {
+  min-width: abs.$mobile-width;
+  font-family: Raleway, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.page__body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  margin: 0;
+  background-color: abs.$bg-white;
+  color: abs.$txt-content;
+}
+
+.page__header {
+  min-height: 68px;
+  background-color: #cdd6df;
+}
+
+.header__wrapper {
+  display: flex;
+  margin: auto;
+
+  @media (width < abs.$tablet-width) {
+    width: 273px;
+  }
+
+  @media (width >= abs.$tablet-width) {
+    width: 716px;
+  }
+
+  @media (width >= abs.$desktop-width) {
+    width: 1092px;
+  }
+}
