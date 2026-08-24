@@ -1,0 +1,32 @@
+@use "../../abstracts/index" as abs;
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (width > abs.$mobile-width) {
+    width: 133px;
+  }
+
+  @media (width > abs.$tablet-width) {
+    width: 135px;
+  }
+
+  &__img {
+    @media (width >= abs.$tablet-width) {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  &__word {
+    font-family: AmaticSC, Arial, sans-serif;
+    font-size: 40px;
+    color: #0F805D;
+    
+    @media (width < abs.$tablet-width) {
+      display: none;
+    }
+  }
+}

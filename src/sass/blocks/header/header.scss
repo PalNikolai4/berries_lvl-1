@@ -1,0 +1,23 @@
+@use "../../abstracts/index" as abs;
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 21px 0 26px;
+  position: relative;
+
+  @media (width >= abs.$tablet-width) {
+    padding-top: 22px;
+    padding-right: 26px;
+    padding-bottom: 22px;
+  }
+
+  @media (width >= abs.$desktop-width) {
+    max-width: 1092px;
+    padding: 24px 0;
+  }
+}

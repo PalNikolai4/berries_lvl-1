@@ -10,17 +10,16 @@
 <body class="page__body">
   <header class="page__header">
     <div class="header__wrapper">
-      <a class="logo header-logo" aria-label="На главную">
+      <a class="logo" aria-label="На главную">
         <span class="visually-hidden">Логотип магазина ягод Berries</span>
-        <svg class="logo-img" width="52" height="52">
+        <svg class="logo__img" width="52" height="52" viewBox="0 0 52 52">
           <use href="./assets/icons/logo.svg"></use>
         </svg>
-        <svg class="logo-word" width="67" height="50">
-          <use href="./assets/icons/logo-word.svg"></use>
-        </svg>
+        <span class="logo__word">Ягода</span>
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__button" type="button">
+      <nav class="main-nav main-nav--nojs main-nav--closed">
+        <button class="main-nav__toggle" type="button">
+          <span class="main-nav__toggle-burger" aria-hidden="true"></span>
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list">
@@ -40,7 +39,7 @@
       </nav>
     </div>
   </header>
-  <main class="page__main">
+  <!-- <main class="page__main">
     <h1 class="visually-hidden">Магазин ягод Berries</h1>
 
     <section class="promo">
@@ -270,14 +269,12 @@
   </main>
   <footer class="page__footer">
     <div class="footer__wrapper">
-      <a class="logo footer-logo" aria-label="На главную">
+      <a class="logo" aria-label="На главную">
         <span class="visually-hidden">Логотип магазина ягод Berries</span>
-        <svg class="logo-img" width="52" height="52">
+        <svg class="logo__img" width="52" height="52">
           <use href="./assets/icons/logo.svg"></use>
         </svg>
-        <svg class="logo-word" width="67" height="50">
-          <use href="./assets/icons/logo-word.svg"></use>
-        </svg>
+        <span class="logo__word">Ягода</span>
       </a>
       <ul class="social__list">
         <li class="social__item">
@@ -296,7 +293,7 @@
         </a>
       </p>
     </div>
-  </footer>
+  </footer> -->
   <script type="module" src="js/main.js"></script>
 </body>
 
