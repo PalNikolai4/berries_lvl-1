@@ -1,7 +1,7 @@
 import "../sass/style.scss";
 
 const mainNav = document.querySelector(".main-nav");
-const mainNavToggle = mainNav.querySelector(".main-nav__toggle");
+const mainNavToggle = document.querySelector(".header__toggle");
 
 mainNav.classList.remove("main-nav--nojs");
 

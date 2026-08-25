@@ -9,17 +9,17 @@
 
 <body class="page__body">
   <header class="page__header">
-    <div class="header__wrapper">
-      <a class="logo" aria-label="На главную">
-        <span class="visually-hidden">Логотип магазина ягод Berries</span>
-        <svg class="logo__img" width="52" height="52" viewBox="0 0 52 52">
-          <use href="./assets/icons/logo.svg"></use>
-        </svg>
-        <span class="logo__word">Ягода</span>
-      </a>
-      <nav class="main-nav main-nav--nojs main-nav--closed">
-        <button class="main-nav__toggle" type="button">
-          <span class="main-nav__toggle-burger" aria-hidden="true"></span>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <div class="header__wrapper">
+        <a class="logo" aria-label="На главную">
+          <span class="visually-hidden">Логотип магазина ягод Berries</span>
+          <svg class="logo__img" width="52" height="52" viewBox="0 0 52 52">
+            <use href="./assets/icons/logo.svg"></use>
+          </svg>
+          <span class="logo__word">Ягода</span>
+        </a>
+        <button class="header__toggle" type="button">
+          <span class="header__toggle-burger" aria-hidden="true"></span>
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list">
@@ -36,8 +36,9 @@
             <a class="main-nav__link" href="#">Заказать</a>
           </li>
         </ul>
-      </nav>
-    </div>
+      </div>
+
+    </nav>
   </header>
   <!-- <main class="page__main">
     <h1 class="visually-hidden">Магазин ягод Berries</h1>
