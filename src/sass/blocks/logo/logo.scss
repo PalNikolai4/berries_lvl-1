@@ -5,12 +5,14 @@
   justify-content: space-between;
   align-items: center;
 
-  @media (width > abs.$mobile-width) {
-    width: 133px;
+  @media (width < abs.$tablet-width) {
+    width: 52px;
+    height: 52px;
   }
 
-  @media (width > abs.$tablet-width) {
-    width: 135px;
+  @media (width >= abs.$tablet-width) {
+    width: 133px;
+    height: 60px;
   }
 
   &__img {
@@ -24,7 +26,7 @@
     font-family: AmaticSC, Arial, sans-serif;
     font-size: 40px;
     color: #0F805D;
-    
+
     @media (width < abs.$tablet-width) {
       display: none;
     }

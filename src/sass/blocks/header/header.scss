@@ -5,20 +5,24 @@
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  min-height: abs.$header-height;
-  padding: 0 21px 0 26px;
+  min-height: var(--header-height);
   position: relative;
   margin: 0 auto;
 
+  @media (width < abs.$tablet-width) {
+    min-width: 273px;
+    padding-right: 21px;
+    padding-left: 26px;
+  }
+
   @media (width >= abs.$tablet-width) {
-    padding-top: 22px;
-    padding-right: 26px;
-    padding-bottom: 22px;
+    max-width: 716px;
+    column-gap: 87px;
   }
 
   @media (width >= abs.$desktop-width) {
     max-width: 1092px;
-    padding: 24px 0;
+    column-gap: 345px;
   }
 }
 

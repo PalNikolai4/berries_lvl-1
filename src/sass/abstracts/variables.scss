@@ -9,4 +9,16 @@ $txt-title: #0F805D;
 $txt-content: #000000;
 
 // Variables
-$header-height: 68px;
+:root {
+  @media (width < $tablet-width) {
+    --header-height: 68px;
+  }
+  
+  @media (width >= $tablet-width) {
+    --header-height: 104px;
+  }
+
+  @media (width >= $desktop-width) {
+    --header-height: 108px;
+  }
+}

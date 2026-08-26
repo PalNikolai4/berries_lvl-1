@@ -2,15 +2,11 @@
 
 // main-nav
 .main-nav {
-  min-height: abs.$header-height;
+  box-shadow: 0 4px 4px 0 rgb(0 0 0 / 30%);
 
   @media (width < abs.$tablet-width) {
     position: relative;
     background-color: #cdd6df;
-
-    &.main-nav--closed {
-      box-shadow: 0 4px 4px 0 rgb(0 0 0 / 30%);
-    }
 
     &.main-nav--opened,
     &.main-nav--nojs  {
@@ -28,6 +24,20 @@
   @include abs.reset-list;
 
   box-sizing: border-box;
+
+  @media (width >= abs.$tablet-width) {
+    display: flex;
+    flex: 1 0;
+    flex-wrap: wrap;
+    column-gap: 16px;
+  }
+
+  @media (width >= abs.$desktop-width) {
+    display: flex;
+    flex: 1 0;
+    flex-wrap: wrap;
+    column-gap: 28px;
+  }
 }
 
 @media (width < abs.$tablet-width) {
@@ -38,7 +48,7 @@
   .main-nav--opened .main-nav__list,
   .main-nav--nojs .main-nav__list {
     position: absolute;
-    top: abs.$header-height;
+    top: var(--header-height);
     right: 0;
     left: 0;
     display: flex;
@@ -50,12 +60,22 @@
     background-color: #f1f6fc;
     box-shadow: inset 0 8px 4px -4px rgb(0 0 0 / 30%);
   }
+
 }
 
 // main-nav__link
 .main-nav__link {
   @include abs.reset-link;
 
+  display: block;
   font-size: 20px;
   line-height: 1.15;
+
+  @media (width >= abs.$tablet-width) {
+   min-width: 112px;
+  }
+
+  @media (width >= abs.$desktop-width) {
+   min-width: 132px;
+  }
 }
