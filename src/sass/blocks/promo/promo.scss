@@ -39,41 +39,38 @@
 }
 
 .promo__wrapper {
+  margin: 0 auto;
+
   @media (width < abs.$tablet-width) {
     width: 265px;
-    max-width: 83%;
-    margin: 0 auto;
   }
 
   @media (width >=abs.$tablet-width) {
     width: 532px;
-    max-width: 69%;
-    margin-left: 28.43%;
+    margin-left: 214px;
   }
 
   @media (width >=abs.$desktop-width) {
     width: 549px;
-    max-width: 38%;
-    margin-left: 37.5%;
+    margin-left: 540px;
   }
 }
 
 .promo__title {
   margin-top: 0;
-  font-family: 'Comfortaa';
+  font-family: Comforta, Arial, sans-serif;
   font-weight: 400;
   color: #0F805D;
-  line-height: 1.12;
 
   @media (width < abs.$tablet-width) {
-    margin-bottom: 2rem;
-    font-size: 2.25rem;
+    margin-bottom: 32px;
+    font-size: 36px;
     text-align: center;
   }
 
   @media (width >=abs.$tablet-width) {
-    margin-bottom: 3rem;
-    font-size: 3rem;
+    margin-bottom: 48px;
+    font-size: 48px;
 
     & br {
       display: none;
@@ -81,42 +78,61 @@
   }
 
   @media (width >=abs.$desktop-width) {
-    margin-bottom: 3.25rem;
-    font-size: 3.25rem;
+    margin-bottom: 52px;
+    font-size: 52px;
   }
 }
 
 .promo__list {
   @include abs.reset-list;
 
+  margin: 0 auto;
+
   @media (width < abs.$tablet-width) {
+    width: 208px;
     margin-bottom: 58px;
-    font-size: 1rem;
-    line-height: auto;
-    // max-width: 208px;
-    // padding-left: 72.5px;
+    font-size: 16px;
   }
 
   @media (width >=abs.$tablet-width) {
+    width: 502px;
     margin-bottom: 48px;
-    font-size: 1.125rem;
-    line-height: 1.2;
-    // max-width: 458px;
-    // padding-left: 34px;
+    margin-left: 0;
+    font-size: 18px;
   }
 
-  @media (width >= abs.$desktop-width) {
+  @media (width >=abs.$desktop-width) {
     margin-bottom: 52px;
-  //   // padding-left: 67.5px;
+    margin-left: auto;
   }
 }
 
-.promo__item:not(:last-of-type) {
-  @media (width < abs.$tablet-width) {
-    margin-bottom: 12px;
+.promo__item {
+  display: flex;
+  column-gap: 12px;
+  align-items: center;
+
+  &::before {
+    content: "";
+    width: 32px;
+    height: 32px;
   }
 
-  @media (width >= abs.$tablet-width) {
-    margin-bottom: 19px;
+  &--product::before {
+    background-image: url("../../../assets/icons/leaf.svg");
+  }
+
+  &--taste::before {
+    background-image: url("../../../assets/icons/ice.svg");
+  }
+
+  &--delivery::before {
+    background-image: url("../../../assets/icons/delivery.svg");
+  }
+
+  & span {
+    @media (width < abs.$tablet-width) {
+      max-width: 164px;
+    }
   }
 }
