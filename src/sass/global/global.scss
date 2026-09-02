@@ -1,3 +1,5 @@
+@use "../abstracts/index.scss" as abs;
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -15,4 +17,18 @@
 img {
   max-width: 100%;
   height: auto;
+}
+
+.button {
+  @include abs.reset-link(#ffffff);
+
+  display: block;
+  box-sizing: border-box;
+  padding: 14px 64px;
+  border-radius: 40px;
+  font-family: Raleway, Arial, sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: 5%;
+  background-color: #6A107A;
+  text-align: center;
 }
