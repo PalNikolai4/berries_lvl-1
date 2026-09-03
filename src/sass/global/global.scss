@@ -31,4 +31,13 @@ img {
   letter-spacing: 5%;
   background-color: #6A107A;
   text-align: center;
+
+  &:hover,
+  &:focus {
+    background-color: #B22EC8;
+  }
+
+  &:active {
+    background-color: rgb(106 16 122 / 60%);
+  }
 }

@@ -15,12 +15,12 @@
     padding-left: 26px;
   }
 
-  @media (width >= abs.$tablet-width) {
+  @media (width >=abs.$tablet-width) {
     max-width: 716px;
     column-gap: 87px;
   }
 
-  @media (width >= abs.$desktop-width) {
+  @media (width >=abs.$desktop-width) {
     max-width: 1092px;
     column-gap: 345px;
   }
@@ -39,6 +39,20 @@
     &:hover {
       cursor: pointer;
     }
+
+    &:hover,
+    &:active {
+      &::before,
+      &::after,
+      .header__toggle-burger {
+        background-color: #7bdb0a;
+      }
+    }
+  }
+
+  .header__toggle::before,
+  .header__toggle::after {
+    content: "";
   }
 
   .header__toggle::before,
@@ -50,11 +64,6 @@
     height: 5px;
     background-color: #0f805d;
     border-radius: 5px;
-  }
-
-  .header__toggle::before,
-  .header__toggle::after {
-    content: "";
   }
 
   .main-nav--closed {
