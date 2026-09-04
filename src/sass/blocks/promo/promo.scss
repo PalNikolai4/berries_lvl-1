@@ -60,7 +60,7 @@
   margin-top: 0;
   font-family: Comforta, Arial, sans-serif;
   font-weight: 400;
-  color: #0F805D;
+  color: abs.$txt-title;
 
   @media (width < abs.$tablet-width) {
     margin-bottom: 32px;

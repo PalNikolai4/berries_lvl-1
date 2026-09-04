@@ -1,7 +1,7 @@
 @use "../../abstracts/index" as abs;
 
 .logo {
-  @include abs.reset-link(#0f805d);
+  @include abs.reset-link(abs.$txt-title);
 
   display: flex;
   justify-content: space-between;
