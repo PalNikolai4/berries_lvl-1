@@ -9,6 +9,7 @@
 
   @media (width < abs.$tablet-width) {
     min-height: 640px;
+    margin-bottom: 60px;
     padding-top: 60px;
     background-image: url("../../../assets/images/promo-mob_bg@1x.jpg");
 
@@ -19,6 +20,7 @@
 
   @media (width >=abs.$tablet-width) {
     min-height: 924px;
+    margin-bottom: 100px;
     padding-top: 142px;
     background-image: url("../../../assets/images/promo-tab_bg@1x.jpg");
 
