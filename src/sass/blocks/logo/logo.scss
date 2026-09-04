@@ -1,6 +1,8 @@
 @use "../../abstracts/index" as abs;
 
 .logo {
+  @include abs.reset-link(#0f805d);
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,6 +17,18 @@
     height: 60px;
   }
 
+  &:hover,
+  &:hover &__word,
+  &:focus,
+  &:focus &__word {
+    color: #7bdb0a;
+  }
+
+  &:active,
+  &:active &__word {
+    color: rgb(15 128 93 / 50%);
+  }
+
   &__img {
     @media (width >= abs.$tablet-width) {
       width: 60px;
@@ -25,7 +39,6 @@
   &__word {
     font-family: AmaticSC, Arial, sans-serif;
     font-size: 40px;
-    color: #0F805D;
 
     @media (width < abs.$tablet-width) {
       display: none;
