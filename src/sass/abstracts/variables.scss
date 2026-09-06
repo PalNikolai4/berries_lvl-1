@@ -5,7 +5,7 @@ $mobile-width: 320px;
 
 // Colors
 $bg-white: #fbfcfe;
-$txt-title: #0F805D;
+$txt-title: #0f805d;
 $txt-content: #000000;
 
 // Variables
@@ -13,7 +13,7 @@ $txt-content: #000000;
   @media (width < $tablet-width) {
     --header-height: 68px;
   }
-  
+
   @media (width >= $tablet-width) {
     --header-height: 104px;
   }
