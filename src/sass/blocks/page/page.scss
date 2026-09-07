@@ -6,7 +6,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 1;
-  color: abs.$txt-content;
+  color: abs.$color-txt;
 }
 
 .page__body {
@@ -15,5 +15,5 @@
   min-height: 100vh;
   margin: 0;
   background-color: abs.$bg-white;
-  color: abs.$txt-content;
+  color: abs.$color-txt;
 }

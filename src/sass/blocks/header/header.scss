@@ -41,11 +41,11 @@
     }
 
     &:hover,
-    &:active {
+    &:focus {
       &::before,
       &::after,
       .header__toggle-burger {
-        background-color: #7bdb0a;
+        background-color: abs.$color-hover;
       }
     }
   }
@@ -62,7 +62,7 @@
     left: 7.5px;
     width: 45px;
     height: 5px;
-    background-color: abs.$txt-title;
+    background-color: abs.$color-title;
     border-radius: 5px;
   }
 

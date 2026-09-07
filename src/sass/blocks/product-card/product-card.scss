@@ -19,7 +19,7 @@
 
 .product-card__link {
   @include abs.reset-link;
-  
+
   display: flex;
   flex-direction: column;
   row-gap: 28px;
@@ -33,7 +33,7 @@
   font-weight: 400;
   font-size: 28px;
   line-height: 33px;
-  color: abs.$txt-title;
+  color: abs.$color-title;
 }
 
 .product-card__info {
