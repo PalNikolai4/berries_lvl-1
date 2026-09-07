@@ -9,3 +9,8 @@
 @use "blocks/product-card/product-card";
 @use "blocks/news/news";
 @use "blocks/news-card/news-card";
+@use "blocks/contacts/contacts";
+
+// проверить блок promo, promo__list, promo__item как ведут себя элементы
+// (текст относительно фоновых картинок) при переполнении.
+// Для примера смотри contacts__item - он уже проверен

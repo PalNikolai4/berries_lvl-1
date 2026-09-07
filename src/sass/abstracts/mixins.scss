@@ -10,8 +10,9 @@
 }
 
 @mixin reset-link($color: #000000) {
-  text-decoration: none;
   color: $color;
+  text-decoration: none;
+  font-style: normal;
 }
 
 @mixin container($padding:0) {
