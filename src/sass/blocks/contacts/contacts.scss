@@ -135,12 +135,15 @@
   }
 }
 
+.contacts__link {
+  @include abs.reset-link(abs.$color-txt);
+}
+
 .contacts__item {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin: 0;
   padding-left: 36px;
   font-size: 14px;
   line-height: 16px;
@@ -151,29 +154,47 @@
     left: 0;
     width: 32px;
     height: 32px;
+    background-color: abs.$color-txt;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
   }
 
   &--street::before {
-    background-image: url("../../../assets/icons/leaf-contacts.svg");
+    mask-image: url("../../../assets/icons/leaf-contacts.svg");
   }
 
   &--phone::before {
-    background-image: url("../../../assets/icons/call-contacts.svg");
+    mask-image: url("../../../assets/icons/call-contacts.svg");
   }
 
   &--email::before {
-    background-image: url("../../../assets/icons/email-contacts.svg");
+    mask-image: url("../../../assets/icons/email-contacts.svg");
   }
 
-  & a {
-    @include abs.reset-link(abs.$color-txt);
+  &:hover,
+  &:focus {
+    color: abs.$color-hover;
+    outline: none;
+
+    &::before {
+      background-color: abs.$color-hover;
+    }
+  }
+
+  &:active {
+    color: abs.$color-active;
+
+    &::before {
+      background-color: abs.$color-active;
+    }
   }
 }
 
 .contacts__map {
   height: 372px;
 
-  @media (width >= abs.$desktop-width) {
+  @media (width >=abs.$desktop-width) {
     width: 552.5px;
     order: 1;
   }
