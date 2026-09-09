@@ -78,4 +78,17 @@
   @media (width >= abs.$desktop-width) {
    min-width: 132px;
   }
+
+  &:hover{
+    color: abs.$color-hover;
+  }
+
+  &:focus-visible {
+    outline: none;
+    color: abs.$color-hover;
+  }
+
+  &:active {
+    color: abs.$color-active;
+  }
 }

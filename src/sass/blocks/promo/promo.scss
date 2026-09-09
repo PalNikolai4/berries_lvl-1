@@ -161,4 +161,8 @@
   @media (width >=abs.$desktop-width) {
     margin-left: 37px;
   }
+
+  &:focus-visible {
+    outline: none;
+  }
 }

@@ -7,12 +7,13 @@
   width: 264px;
   min-height: 432px;
   border-radius: 40px;
-  overflow: hidden;
   background-color: abs.$bg-white;
   box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
 
   &__img {
     display: block;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
     box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
   }
 }
@@ -25,6 +26,14 @@
   row-gap: 28px;
   margin-bottom: 28px;
   align-items: center;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+
+
+
+  &:focus {
+    outline-color: abs.$color-hover;
+  }
 }
 
 .product-card__title {
@@ -44,4 +53,8 @@
 
 .product-card__button {
   margin-top: 38px;
+
+  &:focus-visible {
+    outline: none;
+  }
 }

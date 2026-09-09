@@ -19,9 +19,10 @@
 
   &:hover,
   &:hover &__word,
-  &:focus,
-  &:focus &__word {
+  &:focus-visible,
+  &:focus-visible &__word {
     color: abs.$color-hover;
+    outline: none;
   }
 
   &:active,

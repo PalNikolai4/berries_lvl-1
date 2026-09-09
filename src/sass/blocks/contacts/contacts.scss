@@ -173,7 +173,7 @@
   }
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     color: abs.$color-hover;
     outline: none;
 
