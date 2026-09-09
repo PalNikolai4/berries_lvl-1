@@ -1,15 +1,5 @@
 @use "../../abstracts/index" as abs;
 
-.contacts {
-  @media (width < abs.$tablet-width) {
-    margin-bottom: 60px;
-  }
-
-  @media (width >=abs.$tablet-width) {
-    margin-bottom: 100px;
-  }
-}
-
 .contacts__wrapper {
   margin: 0 auto;
   position: relative;

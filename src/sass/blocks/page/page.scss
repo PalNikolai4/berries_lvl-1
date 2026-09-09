@@ -17,3 +17,13 @@
   background-color: abs.$bg-white;
   color: abs.$color-txt;
 }
+
+.page__main {
+  @media (width < abs.$tablet-width) {
+    padding-bottom: 60px;
+  }
+
+  @media (width >=abs.$tablet-width) {
+    padding-bottom: 100px;
+  }
+}
