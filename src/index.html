@@ -274,29 +274,46 @@
   </main>
   <footer class="page__footer">
     <div class="footer__wrapper">
-      <a class="logo" aria-label="На главную">
+      <a class="logo footer__logo" href="#" aria-label="На главную">
         <span class="visually-hidden">Логотип магазина ягод Berries</span>
         <svg class="logo__img" width="52" height="52">
           <use href="./assets/icons/logo.svg"></use>
         </svg>
         <span class="logo__word">Ягода</span>
       </a>
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--tg" href="#">Мы в telegram</a>
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a class="footer__link" href="#">
+            <span class="visually-hidden">Мы в telegram</span>
+            <svg width="32" height="32">
+              <use href="./assets/icons/sprite.svg#social-tg"></use>
+            </svg>
+          </a>
         </li>
-        <li class="social__item">
-          <a class="social__link social__link--vk" href="#">Мы в vk</a>
+        <li class="footer__item">
+          <a class="footer__link" href="#">
+            <span class="visually-hidden">Мы в ВКонтакте</span>
+            <svg width="32" height="32">
+              <use href="assets/icons/sprite.svg#social-vk"></use>
+            </svg>
+          </a>
         </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="#">Мы в youtube</a>
+        <li class="footer__item">
+          <a class="footer__link" href="#">
+            <span class="visually-hidden">Мы в youtube</span>
+            <svg width="32" height="32">
+              <use href="assets/icons/sprite.svg#social-yt"></use>
+              <!-- <use href="assets/icons/social-ytube.svg"></use> -->
+            </svg>
+          </a>
         </li>
       </ul>
-      <p class="copyright__text">HTML Academy
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="./assets/icons/htmlacademy.svg">
-        </a>
-      </p>
+      <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
+        HTML Academy
+        <svg class="footer__copyright-img" width="20" height="24">
+          <use href="./assets/icons/sprite.svg#htmlAcademy"></use>
+        </svg>
+      </a>
     </div>
   </footer>
   <script type="module" src="js/main.js"></script>

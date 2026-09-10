@@ -10,12 +10,12 @@
 
     &.main-nav--opened,
     &.main-nav--nojs  {
-      background-color: #f1f6fc;
+      background-color: abs.$bg-white-gray;
     }
   }
 
   @media (width >= abs.$tablet-width) {
-    background-color: #f1f6fc;
+    background-color: abs.$bg-white-gray;
   }
 }
 
@@ -57,7 +57,7 @@
     min-height: 360px;
     padding-top: 32px;
     padding-left: 40px;
-    background-color: #f1f6fc;
+    background-color: abs.$bg-white-gray;
     box-shadow: inset 0 8px 4px -4px rgb(0 0 0 / 30%);
   }
 
