@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Магазин ягод Berries</title>
 </head>
+
 <body class="page__body">
   <header class="page__header">
     <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -38,12 +39,175 @@
       </div>
     </nav>
   </header>
-  <main class="page__main order">
-    <header class="order__header">
+  <main class="page__main page__order">
+    <header class="page__order-header">
       <h1 class="visually-hidden">Страница заказа магазина ягод Berries</h1>
-      <h2 class="order__title">Закажи ягоды</h2>
-      <p class="order__promo">Мы соберем для вас ягоды и доставим их в удобном<br> для вас виде - свежими или замороженными</p>
+      <h2 class="page__order-title">Закажи ягоды</h2>
+      <p class="page__order-promo">Мы соберем для вас ягоды и доставим их в удобном<br> для вас виде - свежими или
+        замороженными</p>
     </header>
+    <section class="order">
+      <h2 class="visually-hidden">Список товаров для заказа</h2>
+      <form class="order-form" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="order-form__group">
+          <legend class="order-form__title">Выберите ягоды</legend>
+          <ul class="order-form__list">
+            <li class="order-form__item">
+              <label class="control">
+                <input class="visually-hidden control__input" type="checkbox" name="cowberry">
+                <span class="control__mark"></span>
+                <span class="control__label">Брусника</span>
+              </label>
+            </li>
+            <li class="order-form__item">
+              <label class="control">
+                <input class="visually-hidden control__input" type="checkbox" name="cherry">
+                <span class="control__mark"></span>
+                <span class="control__label">Вишня</span>
+              </label>
+            </li>
+            <li class="order-form__item">
+              <label class="control">
+                <input class="visually-hidden control__input" type="checkbox" name="blueberry-1">
+                <span class="control__mark"></span>
+                <span class="control__label">Голубика</span>
+              </label>
+            </li>
+            <li class="order-form__item">
+              <label class="control">
+                <input class="visually-hidden control__input" type="checkbox" name="blackberry">
+                <span class="control__mark"></span>
+                <span class="control__label">Ежевика</span>
+              </label>
+            </li>
+            <li class="order-form__item">
+              <label class="control">
+                <input class="visually-hidden control__input" type="checkbox" name="strawberry">
+                <span class="control__mark"></span>
+                <span class="control__label">Клубника</span>
+              </label>
+            </li>
+            <li class="order-form__item">
+              <label class="control">
+                <input class="visually-hidden control__input" type="checkbox" name="cranberry">
+                <span class="control__mark"></span>
+                <span class="control__label">Клюква</span>
+              </label>
+            </li>
+            <li class="order-form__item">
+              <label class="control">
+                <input class="visually-hidden control__input" type="checkbox" name="gooseberry">
+                <span class="control__mark"></span>
+                <span class="control__label">Крыжовник</span>
+              </label>
+            </li>
+            <li class="order-form__item">
+              <label class="control">
+                <input class="visually-hidden control__input" type="checkbox" name="raspberry">
+                <span class="control__mark"></span>
+                <span class="control__label">Малина</span>
+              </label>
+            </li>
+            <li class="order-form__item">
+              <label class="control">
+                <input class="visually-hidden control__input" type="checkbox" name="cloudberry">
+                <span class="control__mark"></span>
+                <span class="control__label">Морошка</span>
+              </label>
+            </li>
+            <li class="order-form__item">
+              <label class="control">
+                <input class="visually-hidden control__input" type="checkbox" name="blueberry-2">
+                <span class="control__mark"></span>
+                <span class="control__label">Черника</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="order-form__group">
+          <legend class="order-form__title">Вид хранения</legend>
+          <ul class="order-form__list">
+            <li class="order-form__item">
+              <label class="control">
+                <input class="visually-hidden control__input" type="checkbox" name="fresh-berries">
+                <span class="control__mark"></span>
+                <span class="control__label">свежие ягоды</span>
+              </label>
+            </li>
+            <li class="order-form__item">
+              <label class="control">
+                <input class="visually-hidden control__input" type="checkbox" name="frozen-berries">
+                <span class="control__mark"></span>
+                <span class="control__label">замороженные ягоды</span>
+              </label>
+            </li>
+            <li class="order-form__item">
+              <label class="control">
+                <input class="visually-hidden control__input" type="checkbox" name="mix-berries">
+                <span class="control__mark"></span>
+                <span class="control__label">ягодные миксы</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="order-form__group">
+          <legend class="order-form__title">Способ доставки</legend>
+          <ul class="order-form__list">
+            <li class="order-form__item">
+              <label class="control">
+                <input class="visually-hidden control__input" type="radio" name="delivery-method" value="delivery">
+                <span class="control__mark"></span>
+                <span class="control__label">Доставка (по СПБ в пределах КАД)</span>
+              </label>
+            </li>
+            <li class="order-form__item">
+              <label class="control">
+                <input class="visually-hidden control__input" type="radio" name="delivery-method" value="pickup">
+                <span class="control__mark"></span>
+                <span class="control__label">Самовывоз (Набережная Обводного канала, 101)</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="order-form__group">
+          <legend class="order-form__title">Ваши контакты</legend>
+          <label class="order-form__field">
+            <span class="order-form__label">
+              Имя <span class="order-form__required">*</span>
+            </span>
+            <input class="order-form__input" type="text" name="first-name" placeholder="Как к вам обращаться?"
+              autocomplete="name" required>
+          </label>
+          <label class="order-form__field">
+            <span class="order-form__label">
+              Телефон <span class="order-form__required">*</span>
+            </span>
+            <input class="order-form__input" type="tel" name="phone-number" placeholder="+7 ххх ххх хх хх"
+              autocomplete="tel" required>
+          </label>
+          <label class="order-form__field">
+            <span class="order-form__label">
+              Email <span class="order-form__required">*</span>
+            </span>
+            <input class="order-form__input" type="email" name="email" placeholder="Ваш email" autocomplete="email"
+              required>
+          </label>
+          <label class="order-form__field">
+            <span class="order-form__label">
+              Адрес <span class="order-form__required">*</span>
+            </span>
+            <input class="order-form__input" type="text" name="address" placeholder="Адрес в Санкт-Петербурге"
+              autocomplete="street-address" required>
+          </label>
+          <label class="order-form__field">
+            <span class="order-form__label">Пожелания к заказу</span>
+            <textarea class="order-form__input" name="comment" placeholder="Чем мы можем вам помочь?" rows="5" cols="25"
+              maxlength="500"></textarea>
+          </label>
+        </fieldset>
+        <button class="button order-form__submit" type="submit">Заказать</button>
+      </form>
+    </section>
     <section class="contacts">
       <div class="contacts__wrapper">
         <h2 class="visually-hidden">Контакты</h2>
@@ -51,9 +215,11 @@
           <h3 class="contacts__title">Где забрать<br> ягоды?</h3>
           <p class="contacts__subtitle">Забери ягоды с нашего склада по адресу:</p>
           <address class="contacts__list">
-            <a class="contacts__link contacts__item contacts__item--street" href="https://yandex.ru/maps/-/CTdseE4U" target="_blank" rel="noopener noreferrer">Набережная Обводного канала, 101</a>
+            <a class="contacts__link contacts__item contacts__item--street" href="https://yandex.ru/maps/-/CTdseE4U"
+              target="_blank" rel="noopener noreferrer">Набережная Обводного канала, 101</a>
             <a class="contacts__link contacts__item contacts__item--phone" href="tel:+79105244118">+ 7 910 524 41 18</a>
-            <a class="contacts__link contacts__item contacts__item--email" href="mailto:info@yagoda.ru">info@yagoda.ru</a>
+            <a class="contacts__link contacts__item contacts__item--email"
+              href="mailto:info@yagoda.ru">info@yagoda.ru</a>
           </address>
         </div>
         <div class="contacts__map">
