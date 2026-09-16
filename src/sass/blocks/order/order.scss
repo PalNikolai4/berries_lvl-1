@@ -1,3 +1,47 @@
 @use "../../abstracts/index" as abs;
 
+.order {
+  margin-left: auto;
+  margin-right: auto;
 
+  &::before {
+    content: "";
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url("../../../assets/icons/leaf-line.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  @media (width < abs.$tablet-width) {
+    width: 268px;
+    margin-bottom: 89px;
+
+    &::before {
+      width: 228px;
+      height: 32px;
+      margin-bottom: 50px;
+    }
+  }
+
+  @media (width >=abs.$tablet-width) {
+    width: 624px;
+    margin-bottom: 100px;
+
+    &::before {
+      width: 296px;
+      height: 42px;
+      margin-bottom: 73px;
+    }
+  }
+
+  @media (width >=abs.$desktop-width) {
+    width: 792px;
+
+    &::before {
+      margin-bottom: 62px;
+    }
+  }
+}
