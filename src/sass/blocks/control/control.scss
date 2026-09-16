@@ -1,0 +1,32 @@
+@use "../../abstracts/index" as abs;
+
+.control {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 11px;
+  font-size: 16px;
+  line-height: 19px;
+  color: abs.$color-txt;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:has(.control__input:disabled) {
+    cursor: default;
+  }
+}
+
+.control__mark {
+  display: block;
+  width: 24px;
+  height: 24px;
+  box-sizing: border-box;
+  border: 2px solid abs.$color-title;
+  border-radius: 5px;
+}
+
+.control__input:disabled ~ .control__mark {
+    border-color: rgb(142 152 146 / 70%);
+}
