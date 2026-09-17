@@ -60,7 +60,7 @@
   padding: 0;
 
   &--berries {
-    @media (width >= abs.$tablet-width) and (width < abs.$desktop-width) {
+    @media (width >=abs.$tablet-width) and (width < abs.$desktop-width) {
       margin-right: auto;
       margin-left: auto;
       width: 483px;
@@ -78,13 +78,13 @@
     line-height: 23px;
   }
 
-  @media (width >= abs.$tablet-width) {
+  @media (width >=abs.$tablet-width) {
     margin-bottom: 40px;
     font-size: 28px;
     line-height: 33px;
   }
 
-  @media (width >= abs.$desktop-width) {
+  @media (width >=abs.$desktop-width) {
     margin-bottom: 48px;
   }
 }
@@ -94,11 +94,11 @@
 }
 
 .order-form__group--berries {
-  @media (width >= abs.$tablet-width) {
+  @media (width >=abs.$tablet-width) {
     margin-bottom: 50px;
   }
 
-  @media (width >= abs.$desktop-width) {
+  @media (width >=abs.$desktop-width) {
     margin-bottom: 57px;
   }
 }
@@ -113,14 +113,48 @@
     gap: 32px 20px;
   }
 
-  @media (width >= abs.$tablet-width) {
+  @media (width >=abs.$tablet-width) {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 24px);
     row-gap: 24px;
   }
 
-  @media (width >= abs.$desktop-width) {
+  @media (width >=abs.$desktop-width) {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 24px);
+  }
+}
+
+.order-form__group--storage .order-form__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 23px;
+}
+
+.order-form__group--delivery {
+  .order-form__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+  }
+
+  .control__mark {
+    border-radius: 50%;
+  }
+
+  .control__input:checked~.control__mark {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 9px;
+      height: 9px;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      background-color: abs.$color-title;
+    }
   }
 }
