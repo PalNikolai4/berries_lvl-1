@@ -1,13 +1,14 @@
 @use "../../abstracts/index" as abs;
 
 .control {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto minmax(auto, 1fr);
+  column-gap: 12px;
   align-items: center;
-  column-gap: 11px;
   font-size: 16px;
   line-height: 19px;
   color: abs.$color-txt;
+  overflow: hidden;
 
   &:hover {
     cursor: pointer;
