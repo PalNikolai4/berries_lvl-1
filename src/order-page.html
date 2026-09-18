@@ -155,7 +155,8 @@
           <ul class="order-form__list">
             <li class="order-form__item">
               <label class="control">
-                <input class="visually-hidden control__input" type="radio" name="delivery-method" value="delivery" checked>
+                <input class="visually-hidden control__input" type="radio" name="delivery-method" value="delivery"
+                  checked>
                 <span class="control__mark"></span>
                 <span class="control__label">Доставка<br> (по СПБ в пределах<br> КАД)</span>
               </label>
@@ -169,40 +170,28 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="order-form__group">
+        <fieldset class="order-form__group order-form__group--contacts">
           <legend class="order-form__title">Ваши контакты</legend>
           <label class="order-form__field">
-            <span class="order-form__label">
-              Имя <span class="order-form__required">*</span>
-            </span>
+            <span class="order-form__label">Имя <span>*</span></span>
             <input class="order-form__input" type="text" name="first-name" placeholder="Как к вам обращаться?"
               autocomplete="name" required>
           </label>
           <label class="order-form__field">
-            <span class="order-form__label">
-              Телефон <span class="order-form__required">*</span>
-            </span>
-            <input class="order-form__input" type="tel" name="phone-number" placeholder="+7 ххх ххх хх хх"
-              autocomplete="tel" required>
+            <span class="order-form__label">Телефон <span>*</span></span>
+            <input class="order-form__input" type="tel" name="phone-number" placeholder="+7 ххх ххх хх хх" autocomplete="tel" required>
           </label>
           <label class="order-form__field">
-            <span class="order-form__label">
-              Email <span class="order-form__required">*</span>
-            </span>
-            <input class="order-form__input" type="email" name="email" placeholder="Ваш email" autocomplete="email"
-              required>
+            <span class="order-form__label">Email <span>*</span></span>
+            <input class="order-form__input" type="email" name="email" placeholder="Ваш email" autocomplete="email" required>
           </label>
           <label class="order-form__field">
-            <span class="order-form__label">
-              Адрес <span class="order-form__required">*</span>
-            </span>
-            <input class="order-form__input" type="text" name="address" placeholder="Адрес в Санкт-Петербурге"
-              autocomplete="street-address" required>
+            <span class="order-form__label">Адрес <span>*</span></span>
+            <textarea class="order-form__input" name="address" placeholder="Адрес в Санкт-Петербурге" rows="3" cols="25" maxlength="500" autocomplete="street-address" required></textarea>
           </label>
           <label class="order-form__field">
             <span class="order-form__label">Пожелания к заказу</span>
-            <textarea class="order-form__input" name="comment" placeholder="Чем мы можем вам помочь?" rows="5" cols="25"
-              maxlength="500"></textarea>
+            <textarea class="order-form__input" name="comment" placeholder="Чем мы можем вам помочь?" rows="5" cols="25" maxlength="500"></textarea>
           </label>
         </fieldset>
         <button class="button order-form__submit" type="submit">Заказать</button>
