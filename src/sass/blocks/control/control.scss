@@ -12,6 +12,18 @@
 
   &:hover {
     cursor: pointer;
+
+    & .control__mark {
+      border-color: abs.$color-hover;
+    }
+
+    & .control__input[type="radio"]:checked~.control__mark::before {
+      background-color: abs.$color-hover;
+    }
+
+    & .control__input[type="checkbox"]:checked~.control__mark::before {
+      border-color: abs.$color-hover;
+    }
   }
 
   &:has(.control__input:disabled) {
@@ -19,7 +31,51 @@
   }
 }
 
+.control__input {
+  &[type="radio"] {
+    ~.control__mark {
+      border-radius: 50%;
+    }
+
+    &:checked {
+      ~.control__mark {
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 9px;
+          height: 9px;
+          transform: translate(-50%, -50%);
+          border-radius: 50%;
+          background-color: abs.$color-title;
+        }
+      }
+    }
+  }
+
+  &[type="checkbox"] {
+    &:checked{
+      ~.control__mark {
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 11px;
+          height: 5px;
+          border: 2px solid abs.$color-title;
+          border-top: none;
+          border-right: none;
+          transform: translate(-50%, calc(-50% - 1.5px)) rotate(-45deg);
+        }
+      }
+    }
+  }
+}
+
 .control__mark {
+  position: relative;
   display: block;
   width: 24px;
   height: 24px;
@@ -28,6 +84,6 @@
   border-radius: 5px;
 }
 
-.control__input:disabled ~ .control__mark {
-    border-color: rgb(142 152 146 / 70%);
+.control__input:disabled~.control__mark {
+  border-color: rgb(142 152 146 / 70%);
 }
