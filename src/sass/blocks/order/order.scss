@@ -132,32 +132,10 @@
   row-gap: 23px;
 }
 
-.order-form__group--delivery {
-  .order-form__list {
+.order-form__group--delivery .order-form__list {
     display: flex;
     flex-direction: column;
     row-gap: 32px;
-  }
-
-  .control__mark {
-    border-radius: 50%;
-  }
-
-  .control__input:checked~.control__mark {
-    position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 9px;
-      height: 9px;
-      transform: translate(-50%, -50%);
-      border-radius: 50%;
-      background-color: abs.$color-title;
-    }
-  }
 }
 
 .order-form__group--contacts {
