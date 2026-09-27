@@ -5,6 +5,8 @@
   flex-direction: column;
   align-items: center;
   width: 264px;
+  padding-bottom: 54px;
+  box-sizing: border-box;
   min-height: 432px;
   border-radius: 40px;
   background-color: abs.$bg-white;
@@ -37,7 +39,10 @@
 }
 
 .product-card__title {
+  max-width: 220px;
   margin: 0;
+  text-align: center;
+  overflow-wrap: anywhere;
   font-family: Raleway, Arial, sans-serif;
   font-weight: 400;
   font-size: 28px;

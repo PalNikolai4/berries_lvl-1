@@ -8,7 +8,6 @@
   font-size: 16px;
   line-height: 19px;
   color: abs.$color-txt;
-  overflow: hidden;
 
   &:hover {
     cursor: pointer;
@@ -86,4 +85,8 @@
 
 .control__input:disabled~.control__mark {
   border-color: rgb(142 152 146 / 70%);
+}
+
+.control__label {
+  overflow-wrap: anywhere;
 }
