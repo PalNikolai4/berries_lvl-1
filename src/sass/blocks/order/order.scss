@@ -133,9 +133,9 @@
 }
 
 .order-form__group--delivery .order-form__list {
-    display: flex;
-    flex-direction: column;
-    row-gap: 32px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
 }
 
 .order-form__group--contacts {
@@ -175,6 +175,16 @@
         grid-column: 1 / -1;
       }
     }
+
+    &:hover {
+      .order-form__input {
+        border-color: abs.$color-hover;
+
+        &:disabled {
+          border-color: abs.$color-disabled;
+        }
+      }
+    }
   }
 
   .order-form__label {
@@ -208,12 +218,26 @@
       color: rgb(142 152 146 / 70%);
     }
 
-
     @media (width > abs.$tablet-width) {
       &[name="address"] {
         height: 52px;
         line-height: 20px;
       }
     }
+
+    &:focus-visible,
+    &:active {
+      border-color: abs.$color-hover;
+      outline: none;
+    }
+
+    &:disabled {
+      border-color: abs.$color-disabled;
+    }
   }
+}
+
+// Класс добавляется элементу при отправке формы, если данные не валидны
+.order-form__input-invalid {
+      border-color: abs.$color-error;
 }
