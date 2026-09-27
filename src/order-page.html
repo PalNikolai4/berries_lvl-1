@@ -174,16 +174,15 @@
           <legend class="order-form__title">Ваши контакты</legend>
           <label class="order-form__field">
             <span class="order-form__label">Имя <span>*</span></span>
-            <input class="order-form__input" type="text" name="first-name" placeholder="Как к вам обращаться?"
-              autocomplete="name" required>
+            <input class="order-form__input" type="text" name="first-name" minlength="2" maxlength="20" pattern="[A-Za-zА-Яа-яЁё\ ]{2,20}" placeholder="Как к вам обращаться?" autocomplete="name" required>
           </label>
           <label class="order-form__field">
             <span class="order-form__label">Телефон <span>*</span></span>
-            <input class="order-form__input" type="tel" name="phone-number" placeholder="+7 ххх ххх хх хх" autocomplete="tel" required>
+            <input class="order-form__input" type="tel" name="phone-number" pattern="^(\+7|8)\s\d{3}\s\d{3}\s\d{2}\s\d{2}" placeholder="+7 ххх ххх хх хх" title="Введите номер телефона в формате: +7 ххх ххх хх хх" autocomplete="tel" required>
           </label>
           <label class="order-form__field">
             <span class="order-form__label">Email <span>*</span></span>
-            <input class="order-form__input" type="email" name="email" placeholder="Ваш email" autocomplete="email" required>
+            <input class="order-form__input" type="email" name="email" pattern="[A-Za-z0-9\_\-\+\%\.]+@[A-Za-z0-9].[A-Za-z]{2,5}" placeholder="Ваш email" title="Введите корректный адрес электронной почты" autocomplete="email" required>
           </label>
           <label class="order-form__field">
             <span class="order-form__label">Адрес <span>*</span></span>
